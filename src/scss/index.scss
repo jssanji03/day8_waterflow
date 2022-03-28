@@ -1,0 +1,48 @@
+@import "~bootstrap/scss/bootstrap";
+@import "bricklayer/dist/bricklayer.min.css";
+@import "animate.css";
+
+// :root {
+//   --animate-delay: 0.1s;
+// }
+
+.sideMenu{
+    background-color: #EFEFEF;
+    ul{
+        li{
+            list-style: none;
+            a{
+                color: rgb(156, 156, 156);
+                text-decoration: none;
+                &.active{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+main{
+    .box {
+        margin: 10px 0;
+        border: none;
+        overflow: hidden;
+        border-radius: 10px;
+        img{
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+    .bricklayer-column-sizer {
+    /* divide by 3. */
+    width: 33.3%;
+    }
+    }
+    
+    @media screen and (min-width: 768px) {
+    .bricklayer-column-sizer {
+    /* divide by 2. */
+    width: 30%;
+    }
+    
+    }
+}
